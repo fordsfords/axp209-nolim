@@ -92,10 +92,12 @@ Get a better power supply or cable.
 
 ## UNDO - Restoring the normal current limit
 
-Once you resolve your power issues, you should remove axp209-nolim:
+Once you resolve your power issues, you should remove the axp209-nolim startup
+script:
 
         sudo update-rc.d apx209-nolim remove
         sudo rm /etc/init.d/apx209-nolim
+        sudo i2cset -f -y 0 0x34 0x30 0x60
 
 
 ## Release Notes
