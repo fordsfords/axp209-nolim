@@ -1,0 +1,22 @@
+#!/bin/sh -e
+### BEGIN INIT INFO
+# Provides:          axp209-nolim
+# Required-Start:    udev-finish
+# Required-Stop:
+# Default-Start:     S
+# Default-Stop:
+# Short-Description: Increase CHIP's axp209 current limit.
+### END INIT INFO
+
+PATH="/sbin:/bin"
+
+. /lib/lsb/init-functions
+
+case "$1" in
+  start) ;;
+  stop|restart|force-reload) exit 0 ;;
+  *) echo "Usage: $0 {start|stop|restart|force-reload}" >&2; exit 1 ;;
+esac
+
+/usr/sbin/i2cset -f -y 0 0x34 0x30 0x63  # no current limit
+## /usr/sbin/i2cset -f -y 0 0x34 0x30 0x20  # no voltage drop limit
