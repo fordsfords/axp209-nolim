@@ -100,6 +100,14 @@ script:
         sudo i2cset -f -y 0 0x34 0x30 0x60
 
 
+## Misc Notes
+
+* This startup script was cloned from /etc/init.d/udev-finish
+* I learned about the SysV init scripts at
+  https://wiki.debian.org/LSBInitScripts
+* I still don't understand run levels in Debian.  :-(
+
+
 ## Release Notes
 
 * 18-Jun-2016
