@@ -95,8 +95,8 @@ Get a better power supply or cable.
 Once you resolve your power issues, you should remove the axp209-nolim startup
 script:
 
-        sudo update-rc.d apx209-nolim remove
-        sudo rm /etc/init.d/apx209-nolim
+        sudo update-rc.d axp209-nolim remove
+        sudo rm /etc/init.d/axp209-nolim
         sudo i2cset -f -y 0 0x34 0x30 0x60
 
 
