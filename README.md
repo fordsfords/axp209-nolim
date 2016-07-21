@@ -22,11 +22,8 @@ at http://geeky-boy.com.  Can't see it?  Keep looking.
 
 ## Introduction
 
-This project is no longer needed for owners of C.H.I.P.  It is now
-possible to flash with a version of CHIP OS that sets the AXP209 to
-"no limit".  See [this post](https://bbs.nextthing.co/t/chip-power-issues-w-hdmi-vga-dips/5603?u=fordsfords).
-
-I will keep this project intact, partly as an example of an LSB init script.
+This project is not needed for CHIP users who flash the "no limit" OS.
+But for other builds of the OS, this project can still be very useful.
 
 The [CHIP](http://getchip.com/) single-board computer contains an AXP209 power
 controller that manages input power from three sources: MicroUSB, CHG-IN, and
