@@ -79,7 +79,7 @@ Now, do a graceful restart:
 
         sudo shutdown -r now
 
-When you can log back into CHIP, test to verify that the scirpt worked:
+When you can log back into CHIP, test to verify that the script worked:
 
         sudo i2cget -f -y 0 0x34 0x30
 
